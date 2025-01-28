@@ -37,7 +37,7 @@ Restaura las dependencias del proyecto con el siguiente comando:
 
 ### 3. Ejecutar la aplicación
 Ejecuta la aplicación con:
-```dotnet run```
+```dotnet run```  
 La API estará disponible en http://localhost:5240 (el puerto puede variar)
 
 ### 4. Probar los endpoints
@@ -48,7 +48,7 @@ Desde ahí, podrás probar el endpoint principal:
 GET /api/hackernews/beststories
 
 **Parámetros:**
-/api/hackernews/beststories?n={n} 
+/api/hackernews/beststories?n={n}   
 n (opcional): Número de historias a recuperar (por defecto 10).
 
 **Ejemplo de respuesta:**
