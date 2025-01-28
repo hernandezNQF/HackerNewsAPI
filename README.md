@@ -45,10 +45,10 @@ Accede a la documentación Swagger en tu navegador en:
 http://localhost:5240/swagger
 
 Desde ahí, podrás probar el endpoint principal:
-GET /api/hackernews/beststories
+```GET /api/hackernews/beststories```
 
 **Parámetros:**
-/api/hackernews/beststories?n={n}   
+```/api/hackernews/beststories?n={n} ```  
 n (opcional): Número de historias a recuperar (por defecto 10).
 
 **Ejemplo de respuesta:**
