@@ -33,11 +33,11 @@ cd HackerNewsAPI
 
 ### 2. Restaurar dependencias
 Restaura las dependencias del proyecto con el siguiente comando:
-dotnet restore
+```dotnet restore```
 
 ### 3. Ejecutar la aplicación
 Ejecuta la aplicación con:
-dotnet run
+```dotnet run```
 La API estará disponible en http://localhost:5240 (el puerto puede variar)
 
 ### 4. Probar los endpoints
@@ -47,11 +47,11 @@ http://localhost:5240/swagger
 Desde ahí, podrás probar el endpoint principal:
 GET /api/hackernews/beststories
 
-Parámetros:
-GET /api/hackernews/beststories?n={n} 
+**Parámetros:**
+/api/hackernews/beststories?n={n} 
 n (opcional): Número de historias a recuperar (por defecto 10).
 
-*Ejemplo de respuesta:*
+**Ejemplo de respuesta:**
 ```json
 [
   {
@@ -69,13 +69,13 @@ n (opcional): Número de historias a recuperar (por defecto 10).
 ---
 
 ### Supuestos realizados
-1. Formato de datos:
+**1. Formato de datos:**
   El formato de salida incluye campos relevantes (title, uri, postedBy, etc.) basados en los requisitos.
 
-2. Orden de las historias:
+**2. Orden de las historias:**
   Las historias están ordenadas en orden descendente por puntuación.
 
-3. Gestión de errores:
+**3. Gestión de errores:**
   Si ocurre un error al interactuar con la API de Hacker News, se devuelve un error 500 con un mensaje descriptivo.
 
 ---
@@ -83,14 +83,14 @@ n (opcional): Número de historias a recuperar (por defecto 10).
 ### Mejoras y cambios posibles
 Dado más tiempo, se podrían implementar las siguientes mejoras:
 
-1. Caching:
+**1. Caching:**
   Implementar almacenamiento en caché para evitar múltiples solicitudes innecesarias a la API de Hacker News, mejorando el rendimiento y reduciendo la carga en su servidor.
 
-2. Paginación:
+**2. Paginación:**
   Agregar soporte para paginación en los resultados devueltos por la API.
 
-3. Pruebas unitarias:
+**3. Pruebas unitarias:**
 Escribir pruebas unitarias para validar la funcionalidad del servicio HackerNewsService.
 
-4. Manejo avanzado de errores:
+**4. Manejo avanzado de errores:**
   Mejorar el manejo de excepciones para diferenciar errores del cliente (como parámetros inválidos) y errores del servidor externo.
